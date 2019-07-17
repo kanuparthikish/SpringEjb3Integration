@@ -1,0 +1,5 @@
+1.To deploy the application on wildfly which server is up and runing
+mvn clean install wildfly:deploy -Pwildfly-runtime
+2.To create a jar and placed it into local repository
+mvn compile package
+mvn install:install-file -Dfile=target\HelloEJB3Project-0.0.1-SNAPSHOT.jar -DpomFile=pom.xml -Dsources=target\HelloEJB3Project-0.0.1-SNAPSHOT.jar
